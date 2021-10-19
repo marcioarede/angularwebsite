@@ -1,0 +1,93 @@
+<div class="row mb-4">
+  <div class="col-md">
+    <h1 class="h2 border-left pl-2">
+      Clientes
+    </h1>
+  </div>
+  <div class="col-md">
+    <a routerLink="novo" class="btn btn-success float-right">
+      Novo Cliente
+    </a>
+  </div>
+</div>
+
+<table class="table table-hover">
+  <thead>
+    <tr class="bg-primary text-light">
+      <th>Nome</th>
+      <th>CPF</th>
+      <th>Email</th>
+      <th>Data de Nasc</th>
+      <th>Telefone</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+       <td>
+        <span>Marcelo Fernandes</span>
+      </td>
+      <td>
+        <span>119.333.222.28</span>
+      </td>
+      <td>
+        <span>marcelo.fernandes@gmail.com</span>
+      </td>
+      <td>
+        <span>12/12/1987</span>
+      </td>
+      <td>
+        <span>(32)98888-2222</span>
+      </td>
+      <td>
+        <a [routerLink]="['alterar', '1']" class="btn btn-outline-info btn-small mr-1">Editar</a>
+        <button class="btn btn-outline-danger btn-small">Excluir</button>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+       <span>Ana Carolina</span>
+     </td>
+     <td>
+       <span>333.444.666.99</span>
+     </td>
+     <td>
+       <span>ana.carolina@gmail.com</span>
+     </td>
+     <td>
+       <span>22/10/1997</span>
+     </td>
+     <td>
+       <span>(32)98777-2111</span>
+     </td>
+     <td>
+       <a [routerLink]="['alterar', '1']" class="btn btn-outline-info btn-small mr-1">Editar</a>
+       <button class="btn btn-outline-danger btn-small">Excluir</button>
+     </td>
+   </tr>
+
+   <tr>
+    <td>
+     <span>Bianca Rodrigues</span>
+   </td>
+   <td>
+     <span>111.222.333.44</span>
+   </td>
+   <td>
+     <span>bianca.rodrigues@gmail.com</span>
+   </td>
+   <td>
+     <span>02/02/1992</span>
+   </td>
+   <td>
+     <span>(32)98444-1111</span>
+   </td>
+   <td>
+     <a [routerLink]="['alterar', '1']" class="btn btn-outline-info btn-small mr-1">Editar</a>
+     <button class="btn btn-outline-danger btn-small">Excluir</button>
+   </td>
+ </tr>
+ <button type="button" class="btn btn-primary" (click)="Contato()">Suporte/Contato</button>
+  </tbody>
+</table>
